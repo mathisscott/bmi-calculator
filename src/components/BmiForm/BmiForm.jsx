@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../App/App.css';
 import PropTypes from 'prop-types';
+import { ClrButton } from "../../utils/wrappedCore";
 
 const BmiForm = ({ change }) => {
 	const [state, setState] = useState({
@@ -62,15 +63,8 @@ const BmiForm = ({ change }) => {
 				</div>
 			</div>
 			<div className="center">
-				<button
-					id="bmi-btn"
-					className="calculate-btn"
-					type="button"
-					disabled={state.weight === '' || state.height === ''}
-					onClick={handleSubmit}
-				>
-					Calculate BMI
-				</button>
+				<ClrButton id="bmi-btn" disabled={state.weight === '' || state.height === ''}
+					onClick={handleSubmit}>Calculate BMI</ClrButton>
 			</div>
 		</>
 	);

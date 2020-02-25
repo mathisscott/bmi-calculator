@@ -54,6 +54,7 @@
     "enzyme-adapter-react-16": "^1.15.1",
     "eslint-plugin-cypress": "^2.7.0",
     "gh-pages": "^2.1.1",
-    "jest-enzyme": "^7.1.1"
+    "jest-enzyme": "^7.1.1",
+    "@clr/core": "^3.0.0-next.8"
   }
 }

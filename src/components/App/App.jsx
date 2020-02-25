@@ -4,7 +4,11 @@ import Info from '../Info/Info';
 import Bar from '../Bar/Bar';
 import './App.css';
 import 'materialize-css/dist/css/materialize.min.css';
+
+import { ClrButton } from "../../utils/wrappedCore";
+
 const uuidv1 = require('uuid/v4');
+
 
 const App = () => {
   let initialState = () => JSON.parse(localStorage.getItem('data')) || [];
@@ -74,9 +78,9 @@ const App = () => {
           </div>
           {localStorage.getItem('lastState') !== null ? (
             <div className='center'>
-              <button className='calculate-btn' onClick={handleUndo}>
+              <ClrButton onClick={handleUndo}>
                 Undo
-              </button>
+              </ClrButton>
             </div>
           ) : (
             ''
