@@ -29,6 +29,12 @@
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}",
       "!src/index.js"
+    ],
+    "transform": {
+      "^.+\\.js?$": "babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/?!(@clr)"
     ]
   },
   "eslintConfig": {
